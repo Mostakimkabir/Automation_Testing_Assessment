@@ -1,0 +1,25 @@
+{
+  "name": "automation-testing-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Nazib",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "runall": "npx playwright test --headed",
+    "question1": "npx playwright test --headed Question1.spec.js",
+    "question2": "npx playwright test --headed Question2.spec.js",
+    "question3": "npx playwright test --headed Question3.spec.js",
+    "showreport": "npx playwright show-report",
+    "getreport": "npx allure generate allure-results --clean && allure open ./allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.2"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.40.0",
+    "allure-playwright": "^3.7.2"
+  }
+}
